@@ -481,6 +481,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | Jev logs | Annotate OpenTelemetry/log records with Jev decisions and optionally skip expensive analysis for low-value traces. | [jevlogs](https://github.com/reachjalil/jevlogs) |
 | Jev trader | Experimental sub-second market-side decision loop; the project documents a default dry-run and a separate live-trading path. | [jev-trader](https://github.com/jarrodwatts/jev-trader) |
 | jev-curate | High-throughput synthetic dataset sifter in Rust: evaluates JSONL and Parquet rows via Jev Noul checks and streams clean/rejected rows to disk. | [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) |
+| is-malicious | Scans source, configuration, build, and CI files with Jev `Noul`, `Score`, and `Choice` questions; code-owned thresholds trigger a second pass and determine report severity. | [is-malicious](https://github.com/luantak/is-malicious) |
 | TypeSafe AI Swift SDK | Swift 6 client for Jev `Choice`, `Score`, and `Noul` questions with strict concurrency, application-owned authentication and retry policy, and network-free tests. | [typesafe-sdk-swift](https://github.com/alterhq/typesafe-sdk-swift) |
 | [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) | Zero-cost agent-first SEO & GEO search radar CLI and MCP server | Akash Priyadarshi |
 | [jev-superpowers](https://github.com/AkashPriyadarshii/jev-superpowers) | Systematic agentic software development framework upgraded with TypeSafe Jev System One typed decisions | Akash Priyadarshi |
