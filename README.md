@@ -513,6 +513,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+| [jev-pref](https://github.com/doeixd/jev-pref) | Semantic code review: project preferences from AGENTS.md are encoded as rules in `jev-pref.json` and checked with Jev against diff hunks, staged files, or PRs; findings are fed back to the coding agent (`npx jev-pref setup`, MIT). | Repository |
 
 ### Curated ecosystem additions
 
