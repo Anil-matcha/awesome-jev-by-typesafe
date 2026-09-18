@@ -25,7 +25,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 
 > This is an independent community collection. It is not an official TypeSafe AI repository. Product behavior, prices, limits, and model aliases can change.
 >
-> Snapshot reviewed: **September 18, 2026.**
+> Snapshot reviewed: **September 19, 2026.**
 
 ## Related Projects
 
@@ -34,6 +34,14 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 - [open-business-agents](https://github.com/Anil-matcha/open-business-agents) — specialized business agents that can use Jev as a decision and safety layer.
 - [awesome-generative-ai-apps](https://github.com/Anil-matcha/awesome-generative-ai-apps) — production-oriented AI app templates where Jev can help with routing, guardrails, and verification.
 - [llm-wiki-agent](https://github.com/SamurAIGPT/llm-wiki-agent) — persistent, interlinked knowledge workflow that pairs naturally with semantic retrieval and citation checks.
+
+## Related directories
+
+- [Awesome Jev directory](https://awesomejev.com/) — searchable, daily-refreshed directory of Jev repositories, live demos, benchmarks, and articles; use it for discovery, not as an endorsement.
+- [yibie/awesome-jev](https://github.com/yibie/awesome-jev) — high-signal field guide with explicit inclusion and evidence rules.
+- [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) — source-backed ecosystem list organized around SDKs, agent tooling, workflows, games, reproductions, and evaluation.
+- [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) — broad index covering official resources, clients, agent tools, games, research, cookbooks, and patterns.
+- [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) — broader TypeSafe/System One index including official resources and community projects.
 
 ## The short version
 
@@ -61,10 +69,25 @@ That makes Jev a good fit for the fuzzy middle between brittle rules and expensi
 | Output | `Choice`, `Score`, and `Noul` answers with typed fields; Choice and Score also include probabilities and confidence | [Primitives](https://docs.typesafe.ai/primitives) |
 | Current listed price | `$0.042 / 1M` input tokens; output tokens listed as free | [Models](https://docs.typesafe.ai/models) |
 | Current listed limits | `250,000` tokens/second and `1,200` requests/minute; TypeSafe says limits can change dynamically | [Models](https://docs.typesafe.ai/models) |
+| Context length | `64k` tokens per request; TypeSafe documents `32k` for state plus the longest question | [Models](https://docs.typesafe.ai/models) |
+| Alias behavior | `jev-latest` and `jev-preview` resolve to versioned releases; aliases can move | [Models](https://docs.typesafe.ai/models) |
+| Calibration guidance | Pin a versioned model ID when thresholds depend on model behavior, and log the version returned in each response | [Models](https://docs.typesafe.ai/models) |
+| Language guidance | English is the primary language; test non-English workloads on representative data before relying on calibrated thresholds | [Models](https://docs.typesafe.ai/models) |
+| Data handling | TypeSafe says customer requests and responses are not used to train models; check current enterprise retention terms for zero-data-retention requirements | [Models](https://docs.typesafe.ai/models) |
 | Modalities | Text only for now; images, audio, and video are not supported | [System One](https://docs.typesafe.ai/concepts/system-one) |
 | Availability | Early access at launch; check the [TypeSafe console](https://console.typesafe.ai/) | [Launch post](https://typesafe.ai/blog/introducing-system-one-models-and-jev) |
 
 TypeSafe’s launch materials report **70–500 ms** end-to-end response times for TypeSafe and describe Jev as roughly two orders of magnitude faster and more efficient for System One-shaped tasks. Treat those as vendor-reported, workload-dependent results; benchmark your own state, question design, network path, and concurrency.
+
+### Official access paths
+
+| Path | Best fit | Notes |
+|---|---|---|
+| [Official API and SDKs](https://docs.typesafe.ai/api) | Direct production integrations | Use the TypeSafe Python or JavaScript SDK, or call `POST /v1/systemone` directly when you need full control over retries and transport. |
+| [Vercel AI Gateway](https://vercel.com/ai-gateway/models/jev) | AI SDK applications | Jev is available as `typesafe-ai/jev`; provider pricing, limits, and gateway behavior should be checked separately from the direct API. |
+| [Cloudflare Workers AI](https://developers.cloudflare.com/ai/models/typesafe/jev/) | Edge and Workers deployments | The model is listed as `typesafe/jev`; verify platform-specific context, rate, and data-handling terms. |
+| [System One adapter for Python](https://github.com/typesafe-ai/system-one-adapter-python) | Local or provider-backed compatibility testing | A drop-in System One-shaped adapter backed by OpenAI, Anthropic, or OpenAI-compatible models; useful for comparison and development, not a substitute for production Jev calibration. |
+| [TypeSafe agent skill](https://docs.typesafe.ai/agent-skill) | Claude Code, Codex, and other coding agents | Official instructions make Jev available as a typed decision tool inside an agent workflow. |
 
 ## Read first
 
@@ -473,23 +496,53 @@ These are additional domains explicitly listed in the official use-case map. Eac
 
 These are community projects, not TypeSafe endorsements. They show how the same decision-layer interface is being used outside the official examples; treat demos, dry runs, and financial or home-automation integrations as experiments that require your own safety controls.
 
-| Implementation | Use case | Source |
+| Implementation | Use case | Evidence |
 |---|---|---|
-| Jev plays Snake | Real-time game control: code generates legal moves and exact state facts, while Jev chooses one move per tick. | [typesafe-snake](https://github.com/sorrycc/typesafe-snake) |
-| Home Assistant Jev | Expose `Noul`, `Choice`, and `Score` answers as automation entities and actions for household workflows. | [HA-Jev](https://github.com/AboveColin/HA-Jev) |
-| Jev MCP server | Give coding agents typed claim verification, content screening, and semantic ranking tools. | [jev-mcp](https://github.com/jkudish/jev-mcp) |
-| Jev logs | Annotate OpenTelemetry/log records with Jev decisions and optionally skip expensive analysis for low-value traces. | [jevlogs](https://github.com/reachjalil/jevlogs) |
-| Jev trader | Experimental sub-second market-side decision loop; the project documents a default dry-run and a separate live-trading path. | [jev-trader](https://github.com/jarrodwatts/jev-trader) |
-| jev-curate | High-throughput synthetic dataset sifter in Rust: evaluates JSONL and Parquet rows via Jev Noul checks and streams clean/rejected rows to disk. | [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) |
-| is-malicious | Scans source, configuration, build, and CI files with Jev `Noul`, `Score`, and `Choice` questions; code-owned thresholds trigger a second pass and determine report severity. | [is-malicious](https://github.com/luantak/is-malicious) |
-| TypeSafe AI Swift SDK | Swift 6 client for Jev `Choice`, `Score`, and `Noul` questions with strict concurrency, application-owned authentication and retry policy, and network-free tests. | [typesafe-sdk-swift](https://github.com/alterhq/typesafe-sdk-swift) |
-| [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) | Zero-cost agent-first SEO & GEO search radar CLI and MCP server | Akash Priyadarshi |
-| [jev-superpowers](https://github.com/AkashPriyadarshii/jev-superpowers) | Systematic agentic software development framework upgraded with TypeSafe Jev System One typed decisions | Akash Priyadarshi |
-| [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) | Zero-hallucination open-source repo and crate scout powered by TypeSafe AI Jev System One scoring | Rust, CLI, MCP |
-| jev-git | Sub-second Git pre-commit & pre-push reflex gate in Rust: screens staged diffs for secrets and destructive commands using Jev Noul checks. | [jev-git](https://github.com/AkashPriyadarshii/jev-git) |
-| jevcal | Threshold calibration: runs your labeled rows through `Noul` / `Choice` / `Score` questions, fits a per-question confidence threshold to a target accuracy on one split, verifies it on a held-out split, and writes a lock file; application code owns the target, the fallback model, and a CI drift check for when the model alias moves. | [jevcal](https://github.com/abhixhek/jevcal) |
-| Janus | Calibration measurement and confidence-based routing, packaged as an installable tool (`pip install janus-decide`): one `Choice` per labelled example over the full class list, with application code owning the threshold sweep, the escalation to a fallback model, and per-row cost accounting; it also measures a log of decisions already taken against a reference model, and reports agreement rather than correctness because such a log carries no ground truth. Raw JSONL and figures are committed. | [Janus](https://github.com/FirasSX914/Janus) |
-| jevql | Semantic SQL over an unmodified Postgres: the plain SQL runs on the server, then Jev answers `Noul`, `Choice`, and `Score` questions about each surviving row so the client can apply `jev()` filters, `jev_prob` sorts, and `jev_choice` groups; batching, caching, and thresholds stay in code. | [jevql](https://github.com/kylemclaren/jevql) |
+| [Jev plays Snake](https://github.com/sorrycc/typesafe-snake) | Real-time game control: code generates legal moves and exact state facts, while Jev chooses one move per tick. | Repository |
+| [Home Assistant Jev](https://github.com/AboveColin/HA-Jev) | Expose `Noul`, `Choice`, and `Score` answers as automation entities and actions for household workflows. | Repository |
+| [Jev MCP server](https://github.com/jkudish/jev-mcp) | Give coding agents typed claim verification, content screening, and semantic ranking tools. | Repository |
+| [Jev logs](https://github.com/reachjalil/jevlogs) | Annotate OpenTelemetry/log records with Jev decisions and optionally skip expensive analysis for low-value traces. | Repository |
+| [Jev trader](https://github.com/jarrodwatts/jev-trader) | Experimental sub-second market-side decision loop; the project documents a default dry-run and a separate live-trading path. | Repository |
+| [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | High-throughput synthetic dataset sifter in Rust: evaluates JSONL and Parquet rows via Jev Noul checks and streams clean/rejected rows to disk. | Repository |
+| [is-malicious](https://github.com/luantak/is-malicious) | Scans source, configuration, build, and CI files with Jev `Noul`, `Score`, and `Choice` questions; code-owned thresholds trigger a second pass and determine report severity. | Repository |
+| [TypeSafe AI Swift SDK](https://github.com/alterhq/typesafe-sdk-swift) | Swift 6 client for Jev `Choice`, `Score`, and `Noul` questions with strict concurrency, application-owned authentication and retry policy, and network-free tests. | Repository |
+| [jev-seo](https://github.com/AkashPriyadarshii/jev-seo) | Zero-cost agent-first SEO and GEO search radar CLI and MCP server. | Repository |
+| [jev-superpowers](https://github.com/AkashPriyadarshii/jev-superpowers) | Agentic software-development framework upgraded with TypeSafe Jev typed decisions. | Repository |
+| [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) | Open-source repository and crate scout powered by Jev scoring, with Rust, CLI, and MCP surfaces. | Repository |
+| [jev-git](https://github.com/AkashPriyadarshii/jev-git) | Rust pre-commit and pre-push gate that screens staged diffs for secrets and destructive commands using Jev Noul checks. | Repository |
+| [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
+| [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
+| [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+
+### Curated ecosystem additions
+
+These projects add useful integration surfaces that are easy to miss in a use-case-only list. They are included because their public documentation exposes a concrete Jev decision boundary or a reusable developer workflow; inclusion is not an endorsement.
+
+| Project | Area | Why it belongs |
+|---|---|---|
+| [typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | Agent tooling | Go MCP server and CLI for exposing typed Jev decisions to coding agents and automation. |
+| [Jevbridge](https://github.com/gamesonrblx/Jevbridge) | Agent tooling | Agent integration bridge that makes Jev decisions available alongside coding-workflow tools. |
+| [jev-axi](https://github.com/shiftynick/jev-axi) | Decision CLI | Command-line primitives for picking, rating, checking, ranking, triaging, and guarding actions. |
+| [jev-guard](https://github.com/leepokai/jev-guard) | Guardrails | Experimental tool-call risk scoring with explicit deny, ask, and allow outcomes. |
+| [pg-jev](https://github.com/realZachi/pg-jev) | Data and SQL | PostgreSQL extension for asking typed semantic questions over table data. |
+| [jev-tree](https://github.com/reachjalil/jev-tree) | Classification | Hierarchical decision-tree workflow for routing high-cardinality categories with Jev. |
+| [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast) | Browser use | Jev chooses the browser operation and element while a smaller model writes text, keeping action selection explicit. |
+| [typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Games and simulation | Uses structured emulator state and typed decisions for game control. |
+| [jev-drone](https://github.com/RomanSlack/jev-drone) | Robotics and simulation | Experimental MuJoCo quadrotor control loop with Jev in the decision path. |
+
+### Benchmarks, calibration, and open reproductions
+
+Keep measured results separate from demos. A useful benchmark record includes the versioned model ID, question definitions, dataset and sample count, deterministic baseline, metric, latency or cost, and the behavior on ambiguous or out-of-domain cases.
+
+| Project | Focus | How to interpret it |
+|---|---|---|
+| [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) | Evaluation and benchmark harnesses | Useful for comparing decision quality and operational behavior; inspect the dataset and protocol before reusing a number. |
+| [jev-korean-benchmark](https://github.com/mahlernim/jev-korean-benchmark) | Korean-language evaluation | A language-specific benchmark candidate; treat results as workload evidence rather than a general multilingual guarantee. |
+| [openjev-sglang](https://github.com/ekzhang/openjev-sglang) | Open reproduction | Jev-inspired/open-model infrastructure; it is not the hosted TypeSafe Jev model. |
+| [jevmlx](https://github.com/bnsd55/jevmlx) | Local MLX experimentation | Jev-style parallel decisions on MLX for local experimentation; compare semantics and calibration separately from hosted Jev. |
+| [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) | Structured-decision comparison | A benchmark project for TypeSafe-shaped decisions; record whether a run uses the official API, a gateway, or an adapter. |
+
+For every benchmark entry, prefer a committed dataset or fixture, a reproducible command, and a clear statement of whether the result measures Jev, an adapter, an open reproduction, or a different model with a similar interface.
 
 Have a project that belongs here? See [Adding your implementation](#adding-your-implementation) below.
 
@@ -589,6 +642,11 @@ The intended GitHub description and topic set are recorded in [`docs/repository-
 - [Quick start](https://docs.typesafe.ai/introduction/quickstart)
 - [Official Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python)
 - [Official JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js)
+- [Official agent skill guide](https://docs.typesafe.ai/agent-skill)
+- [Official agent skills repository](https://github.com/typesafe-ai/skills)
+- [System One adapter for Python](https://github.com/typesafe-ai/system-one-adapter-python)
+- [Vercel AI Gateway Jev](https://vercel.com/ai-gateway/models/jev)
+- [Cloudflare Workers AI Jev](https://developers.cloudflare.com/ai/models/typesafe/jev/)
 - [TypeSafe console](https://console.typesafe.ai/)
 
 ## Contributing
@@ -600,6 +658,8 @@ Useful contributions are small, reproducible, and honest about uncertainty:
 - report model version, date, thresholds, and evaluation set for performance claims;
 - separate TypeSafe-reported results from your own measurements;
 - avoid putting credentials, private customer data, or irreversible actions in examples.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the review and evidence checklist used for new projects, benchmarks, and use cases.
 
 ### Adding your implementation
 
