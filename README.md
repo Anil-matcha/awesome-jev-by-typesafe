@@ -513,6 +513,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+| [wakegate](https://github.com/shitianfang/wakegate) | Experimental wake gate for long-running agents: before a sleeping agent's LLM is resumed on a timer or incoming event, Jev answers one `Choice` (`wake` / `not_yet` / `unrelated`) against the agent's own sleep note; code skips the wakeup only when `wake` is below 0.2 and always wakes on user messages, bare timers, a skip limit, errors, and timeouts. | Repository |
 
 ### Curated ecosystem additions
 
