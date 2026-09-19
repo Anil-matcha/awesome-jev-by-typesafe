@@ -531,6 +531,7 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [pg-jev](https://github.com/realZachi/pg-jev) | Data and SQL | PostgreSQL extension for asking typed semantic questions over table data. |
 | [jev-tree](https://github.com/reachjalil/jev-tree) | Classification | Hierarchical decision-tree workflow for routing high-cardinality categories with Jev. |
 | [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast) | Browser use | Jev chooses the browser operation and element while a smaller model writes text, keeping action selection explicit. |
+| [Jev for Chrome](https://github.com/chy4pro/jev-for-chrome) | Browser use | Unofficial Chrome extension port of Jev Ultrafast: one Jev request per step selects the operation and DOM element, code owns the loop, budgets and stale checks, and two Noul cross-checks (goal reached, stuck) gate DONE and BLOCKED. |
 | [typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Games and simulation | Uses structured emulator state and typed decisions for game control. |
 | [jev-drone](https://github.com/RomanSlack/jev-drone) | Robotics and simulation | Experimental MuJoCo quadrotor control loop with Jev in the decision path. |
 
