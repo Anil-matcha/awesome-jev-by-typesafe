@@ -513,6 +513,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+| [jevkit](https://github.com/ariel-frischer/jevkit) | Typed-decisions CLI: Rust command-line client that accepts `Choice`/`Score`/`Noul` question sets in terse YAML or JSON, validates them offline with 13 lint rules before any call, expands them to the canonical wire payload, and prints parsed answers as JSON; thresholds and exit codes stay in the caller's shell script. | Repository |
 
 ### Curated ecosystem additions
 
