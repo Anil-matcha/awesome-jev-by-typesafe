@@ -42,6 +42,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 - [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) — source-backed ecosystem list organized around SDKs, agent tooling, workflows, games, reproductions, and evaluation.
 - [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) — broad index covering official resources, clients, agent tools, games, research, cookbooks, and patterns.
 - [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) — broader TypeSafe/System One index including official resources and community projects.
+- [valentynkit/awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) — CC0 and awesome-lint clean, sorted by what you would install, with a short "know before you build" section on the limits.
 
 ## The short version
 
