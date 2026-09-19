@@ -513,6 +513,8 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+| [jev-skip](https://github.com/valentynkit/jev-skip) | Browser extension that reads the YouTube caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, with no crowd database. | Repository; reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 a video. |
+| [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) | Real-time game control on PyBoy: deterministic code owns the route and arithmetic while Jev picks only at branches, and each battle turn's faint prediction is scored by Brier against RAM state. | Repository |
 
 ### Curated ecosystem additions
 
@@ -529,6 +531,9 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast) | Browser use | Jev chooses the browser operation and element while a smaller model writes text, keeping action selection explicit. |
 | [typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Games and simulation | Uses structured emulator state and typed decisions for game control. |
 | [jev-drone](https://github.com/RomanSlack/jev-drone) | Robotics and simulation | Experimental MuJoCo quadrotor control loop with Jev in the decision path. |
+| [jev-belay](https://github.com/valentynkit/jev-belay) | Guardrails | Claude Code Stop hook that checks transcript evidence before trusting a "done" claim, spending one four-question Jev call only when files changed with no passing check since, and failing open on any error. |
+| [jev-commit](https://github.com/valentynkit/jev-commit) | Git tooling | Pre-commit hook that uses one Jev call to check whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it detects a credential. |
+| [jev.nvim](https://github.com/valentynkit/jev.nvim) | Editor tooling | Neovim plugin that splits the buffer into functions with Treesitter, scores each against a plain-language question with Jev, and lists answers in the quickfix window ranked by probability. |
 
 ### Benchmarks, calibration, and open reproductions
 
