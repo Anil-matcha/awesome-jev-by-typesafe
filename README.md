@@ -42,6 +42,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 - [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) — source-backed ecosystem list organized around SDKs, agent tooling, workflows, games, reproductions, and evaluation.
 - [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) — broad index covering official resources, clients, agent tools, games, research, cookbooks, and patterns.
 - [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) — broader TypeSafe/System One index including official resources and community projects.
+- [valentynkit/awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) — CC0 and awesome-lint clean, sorted by what you would install, with a short "know before you build" section on the limits.
 
 ## The short version
 
@@ -503,6 +504,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [Jev MCP server](https://github.com/jkudish/jev-mcp) | Give coding agents typed claim verification, content screening, and semantic ranking tools. | Repository |
 | [Jev logs](https://github.com/reachjalil/jevlogs) | Annotate OpenTelemetry/log records with Jev decisions and optionally skip expensive analysis for low-value traces. | Repository |
 | [Jev trader](https://github.com/jarrodwatts/jev-trader) | Experimental sub-second market-side decision loop; the project documents a default dry-run and a separate live-trading path. | Repository |
+| [jev-social](https://github.com/socai-io/jev-social) | Social research routing: Jev `Choice` selects the platform and bounded socai operation from observed state, while code rejects malformed or low-confidence decisions before the local CLI performs read-only browser work. | [Classifier](https://github.com/socai-io/jev-social/blob/main/src/classifier.js) and [action loop](https://github.com/socai-io/jev-social/blob/main/src/actions.js) |
 | [jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | High-throughput synthetic dataset sifter in Rust: evaluates JSONL and Parquet rows via Jev Noul checks and streams clean/rejected rows to disk. | Repository |
 | [is-malicious](https://github.com/luantak/is-malicious) | Scans source, configuration, build, and CI files with Jev `Noul`, `Score`, and `Choice` questions; code-owned thresholds trigger a second pass and determine report severity. | Repository |
 | [TypeSafe AI Swift SDK](https://github.com/alterhq/typesafe-sdk-swift) | Swift 6 client for Jev `Choice`, `Score`, and `Noul` questions with strict concurrency, application-owned authentication and retry policy, and network-free tests. | Repository |
@@ -513,6 +515,9 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+| [jev-pref](https://github.com/doeixd/jev-pref) | Semantic code review: project preferences from AGENTS.md are encoded as rules in `jev-pref.json` and checked with Jev against diff hunks, staged files, or PRs; findings are fed back to the coding agent (`npx jev-pref setup`, MIT). | Repository |
+| [wakegate](https://github.com/shitianfang/wakegate) | Experimental wake gate for long-running agents: before a sleeping agent's LLM is resumed on a timer or incoming event, Jev answers one `Choice` (`wake` / `not_yet` / `unrelated`) against the agent's own sleep note; code skips the wakeup only when `wake` is below 0.2 and always wakes on user messages, bare timers, a skip limit, errors, and timeouts. | Repository |
+| [Supercov](https://github.com/supercorp-ai/supercov) | Code quality and coverage for coding agents. | Repository |
 | [jevkit](https://github.com/ariel-frischer/jevkit) | Typed-decisions CLI: Rust command-line client that accepts `Choice`/`Score`/`Noul` question sets in terse YAML or JSON, validates them offline with 13 lint rules before any call, expands them to the canonical wire payload, and prints parsed answers as JSON; thresholds and exit codes stay in the caller's shell script. | Repository |
 
 ### Curated ecosystem additions
@@ -528,6 +533,7 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [pg-jev](https://github.com/realZachi/pg-jev) | Data and SQL | PostgreSQL extension for asking typed semantic questions over table data. |
 | [jev-tree](https://github.com/reachjalil/jev-tree) | Classification | Hierarchical decision-tree workflow for routing high-cardinality categories with Jev. |
 | [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast) | Browser use | Jev chooses the browser operation and element while a smaller model writes text, keeping action selection explicit. |
+| [Jev for Chrome](https://github.com/chy4pro/jev-for-chrome) | Browser use | Unofficial Chrome extension port of Jev Ultrafast: one Jev request per step selects the operation and DOM element, code owns the loop, budgets and stale checks, and two Noul cross-checks (goal reached, stuck) gate DONE and BLOCKED. |
 | [typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Games and simulation | Uses structured emulator state and typed decisions for game control. |
 | [jev-drone](https://github.com/RomanSlack/jev-drone) | Robotics and simulation | Experimental MuJoCo quadrotor control loop with Jev in the decision path. |
 
