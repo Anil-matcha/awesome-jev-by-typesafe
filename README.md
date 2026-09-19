@@ -513,7 +513,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
-| [jevloop](https://github.com/shitianfang/jevloop) | Harness-agnostic handoff layer: MCP tools batch typed `Noul`/`Choice`/`Score` questions about agent state to Jev, application code owns thresholds, and a typed escalation contract returns low-confidence or untypeable steps to the LLM. | Repository |
+| [jevuse](https://github.com/shitianfang/jevuse) | Claude Code / Codex / pi plugin that hands steps needing no text output to Jev: MCP tools batch typed `Noul`/`Choice`/`Score` questions about agent state, and a typed escalation contract returns generation-shaped or low-confidence steps to the LLM. | Repository |
 
 ### Curated ecosystem additions
 
