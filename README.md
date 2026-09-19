@@ -518,6 +518,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jev-pref](https://github.com/doeixd/jev-pref) | Semantic code review: project preferences from AGENTS.md are encoded as rules in `jev-pref.json` and checked with Jev against diff hunks, staged files, or PRs; findings are fed back to the coding agent (`npx jev-pref setup`, MIT). | Repository |
 | [wakegate](https://github.com/shitianfang/wakegate) | Experimental wake gate for long-running agents: before a sleeping agent's LLM is resumed on a timer or incoming event, Jev answers one `Choice` (`wake` / `not_yet` / `unrelated`) against the agent's own sleep note; code skips the wakeup only when `wake` is below 0.2 and always wakes on user messages, bare timers, a skip limit, errors, and timeouts. | Repository |
 | [Supercov](https://github.com/supercorp-ai/supercov) | Code quality and coverage for coding agents. | Repository |
+| [jevkit](https://github.com/ariel-frischer/jevkit) | Typed-decisions CLI: Rust command-line client that accepts `Choice`/`Score`/`Noul` question sets in terse YAML or JSON, validates them offline with 13 lint rules before any call, expands them to the canonical wire payload, and prints parsed answers as JSON; thresholds and exit codes stay in the caller's shell script. | Repository |
 
 ### Curated ecosystem additions
 
