@@ -517,6 +517,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
 | [jev-pref](https://github.com/doeixd/jev-pref) | Semantic code review: project preferences from AGENTS.md are encoded as rules in `jev-pref.json` and checked with Jev against diff hunks, staged files, or PRs; findings are fed back to the coding agent (`npx jev-pref setup`, MIT). | Repository |
 | [wakegate](https://github.com/shitianfang/wakegate) | Experimental wake gate for long-running agents: before a sleeping agent's LLM is resumed on a timer or incoming event, Jev answers one `Choice` (`wake` / `not_yet` / `unrelated`) against the agent's own sleep note; code skips the wakeup only when `wake` is below 0.2 and always wakes on user messages, bare timers, a skip limit, errors, and timeouts. | Repository |
+| [Supercov](https://github.com/supercorp-ai/supercov) | Code quality and coverage for coding agents. | Repository |
 
 ### Curated ecosystem additions
 
