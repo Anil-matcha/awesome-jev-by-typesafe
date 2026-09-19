@@ -519,6 +519,8 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [wakegate](https://github.com/shitianfang/wakegate) | Experimental wake gate for long-running agents: before a sleeping agent's LLM is resumed on a timer or incoming event, Jev answers one `Choice` (`wake` / `not_yet` / `unrelated`) against the agent's own sleep note; code skips the wakeup only when `wake` is below 0.2 and always wakes on user messages, bare timers, a skip limit, errors, and timeouts. | Repository |
 | [Supercov](https://github.com/supercorp-ai/supercov) | Code quality and coverage for coding agents. | Repository |
 | [jevkit](https://github.com/ariel-frischer/jevkit) | Typed-decisions CLI: Rust command-line client that accepts `Choice`/`Score`/`Noul` question sets in terse YAML or JSON, validates them offline with 13 lint rules before any call, expands them to the canonical wire payload, and prints parsed answers as JSON; thresholds and exit codes stay in the caller's shell script. | Repository |
+| [jev-skip](https://github.com/valentynkit/jev-skip) | Browser extension that reads the YouTube caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, with no crowd database. | Repository; reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 a video. |
+| [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) | Real-time game control on PyBoy: deterministic code owns the route and arithmetic while Jev picks only at branches, and each battle turn's faint prediction is scored by Brier against RAM state. | Repository |
 
 ### Curated ecosystem additions
 
@@ -536,6 +538,9 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [Jev for Chrome](https://github.com/chy4pro/jev-for-chrome) | Browser use | Unofficial Chrome extension port of Jev Ultrafast: one Jev request per step selects the operation and DOM element, code owns the loop, budgets and stale checks, and two Noul cross-checks (goal reached, stuck) gate DONE and BLOCKED. |
 | [typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Games and simulation | Uses structured emulator state and typed decisions for game control. |
 | [jev-drone](https://github.com/RomanSlack/jev-drone) | Robotics and simulation | Experimental MuJoCo quadrotor control loop with Jev in the decision path. |
+| [jev-belay](https://github.com/valentynkit/jev-belay) | Guardrails | Claude Code Stop hook that checks transcript evidence before trusting a "done" claim, spending one four-question Jev call only when files changed with no passing check since, and failing open on any error. |
+| [jev-commit](https://github.com/valentynkit/jev-commit) | Git tooling | Pre-commit hook that uses one Jev call to check whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it detects a credential. |
+| [jev.nvim](https://github.com/valentynkit/jev.nvim) | Editor tooling | Neovim plugin that splits the buffer into functions with Treesitter, scores each against a plain-language question with Jev, and lists answers in the quickfix window ranked by probability. |
 
 ### Benchmarks, calibration, and open reproductions
 
