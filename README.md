@@ -522,6 +522,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jev-skip](https://github.com/valentynkit/jev-skip) | Browser extension that reads the YouTube caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, with no crowd database. | Repository; reports catching 77% of SponsorBlock's sponsor seconds across 23 videos at $0.0008 a video. |
 | [jev-plays-pokemon-red](https://github.com/valentynkit/jev-plays-pokemon-red) | Real-time game control on PyBoy: deterministic code owns the route and arithmetic while Jev picks only at branches, and each battle turn's faint prediction is scored by Brier against RAM state. | Repository |
 | [Jev Trade](https://github.com/aowang-ai/jev-trade) | Each Hyperliquid tick is evaluated as book, tape, and position state; Jev answers `Choice` questions for long/short, open/close/hold, and leverage; application code owns quoting and whether an order is sent. Documents a dry-run path and a separate live-trading path. | Repository |
+| [jev-use](https://github.com/shitianfang/jev-use) | Claude Code / Codex / pi plugin that hands steps needing no text output to Jev: MCP tools batch typed `Noul`/`Choice`/`Score` questions about agent state, and a typed escalation contract returns generation-shaped or low-confidence steps to the LLM. | Repository |
 
 ### Curated ecosystem additions
 
