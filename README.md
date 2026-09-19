@@ -513,6 +513,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | [jevcal](https://github.com/abhixhek/jevcal) | Fits per-question confidence thresholds on labelled data, verifies them on a held-out split, and writes a calibration lock file. | Repository |
 | [Janus](https://github.com/FirasSX914/Janus) | Measures calibration and confidence-based routing, with raw JSONL and figures committed for inspection. | Repository |
 | [jevql](https://github.com/kylemclaren/jevql) | Adds Jev `Noul`, `Choice`, and `Score` filters, probability sorts, and choice groups to semantic SQL over Postgres. | Repository |
+| [Jev Trade](https://github.com/aowang-ai/jev-trade) | Each Hyperliquid tick is evaluated as book, tape, and position state; Jev answers `Choice` questions for long/short, open/close/hold, and leverage; application code owns quoting and whether an order is sent. Documents a dry-run path and a separate live-trading path. | Repository |
 
 ### Curated ecosystem additions
 
