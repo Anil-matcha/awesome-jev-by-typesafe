@@ -502,6 +502,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 
 | Implementation | Use case | Evidence |
 |---|---|---|
+| [DroidJev](https://github.com/mkruglikov/doridjev) | A fast, screenshot-free Android emulator clicker | Repository |
 | [Jev plays Snake](https://github.com/sorrycc/typesafe-snake) | Real-time game control: code generates legal moves and exact state facts, while Jev chooses one move per tick. | Repository |
 | [Home Assistant Jev](https://github.com/AboveColin/HA-Jev) | Expose `Noul`, `Choice`, and `Score` answers as automation entities and actions for household workflows. | Repository |
 | [Jev MCP server](https://github.com/jkudish/jev-mcp) | Give coding agents typed claim verification, content screening, and semantic ranking tools. | Repository |
