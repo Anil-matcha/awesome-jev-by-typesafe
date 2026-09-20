@@ -31,6 +31,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 
 - [awesome-gpt-6-astra](https://github.com/Anil-matcha/awesome-gpt-6-astra) — sibling evidence-backed use-case collection for a general-purpose reasoning model.
 - [awesome-meta-muse-agent](https://github.com/Anil-matcha/awesome-meta-muse-agent) — copy-paste Muse agent briefs with explicit connectors, approval boundaries, and evidence workflows.
+- [BTK audit studies](https://boringtoolskit.com/blog/seo-audit-cost-2026/) — Jev-powered technical SEO audit cost study and calculator-site comparison: 1,204 pages crawled, 4,816 typed judgments per run, $0.0048 per 12-query triage batch.
 - [awesome-agent-apis](https://github.com/Anil-matcha/awesome-agent-apis) — catalog of APIs and tools that typed decisions can route to.
 - [open-business-agents](https://github.com/Anil-matcha/open-business-agents) — specialized business agents that can use Jev as a decision and safety layer.
 - [awesome-generative-ai-apps](https://github.com/Anil-matcha/awesome-generative-ai-apps) — production-oriented AI app templates where Jev can help with routing, guardrails, and verification.
