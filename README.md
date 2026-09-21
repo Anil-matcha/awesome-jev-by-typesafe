@@ -503,6 +503,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 | Implementation | Use case | Evidence |
 |---|---|---|
 | [Jev plays Snake](https://github.com/sorrycc/typesafe-snake) | Real-time game control: code generates legal moves and exact state facts, while Jev chooses one move per tick. | Repository |
+| [jev-snake](https://github.com/dbssman/jev-snake) | Real-time game control: code computes the board, legal moves, and facts, Jev answers five typed questions per tick (move/strategy `Choice`, danger `Score`, escape/food-aligned `Noul`) in one call, and code owns legality, the confidence and escape gate, and the deterministic fallback. | [Server](https://github.com/dbssman/jev-snake/blob/main/server.mjs) and [offline tests](https://github.com/dbssman/jev-snake/blob/main/test.mjs) |
 | [Home Assistant Jev](https://github.com/AboveColin/HA-Jev) | Expose `Noul`, `Choice`, and `Score` answers as automation entities and actions for household workflows. | Repository |
 | [Jev MCP server](https://github.com/jkudish/jev-mcp) | Give coding agents typed claim verification, content screening, and semantic ranking tools. | Repository |
 | [Jev logs](https://github.com/reachjalil/jevlogs) | Annotate OpenTelemetry/log records with Jev decisions and optionally skip expensive analysis for low-value traces. | Repository |
