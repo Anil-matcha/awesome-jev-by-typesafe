@@ -555,6 +555,7 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [jev-belay](https://github.com/valentynkit/jev-belay) | Guardrails | Claude Code Stop hook that checks transcript evidence before trusting a "done" claim, spending one four-question Jev call only when files changed with no passing check since, and failing open on any error. |
 | [jev-commit](https://github.com/valentynkit/jev-commit) | Git tooling | Pre-commit hook that uses one Jev call to check whether the commit message matches the staged diff, flags debug leftovers and unmentioned work, and blocks only when it detects a credential. |
 | [jev.nvim](https://github.com/valentynkit/jev.nvim) | Editor tooling | Neovim plugin that splits the buffer into functions with Treesitter, scores each against a plain-language question with Jev, and lists answers in the quickfix window ranked by probability. |
+| [jeff](https://github.com/saembit/jeff-cli) | Decision CLI | Go CLI where `jeff rank` asks one `Score` per item per weighted dimension of a YAML spec in a single request and code owns the weights and the composite order, with `Noul`, `Choice` and `Score` commands that turn a threshold into an exit code. |
 
 ### Benchmarks, calibration, and open reproductions
 
