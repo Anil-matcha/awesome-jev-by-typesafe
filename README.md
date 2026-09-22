@@ -572,6 +572,7 @@ Keep measured results separate from demos. A useful benchmark record includes th
 | [jevmlx](https://github.com/bnsd55/jevmlx) | Local MLX experimentation | Jev-style parallel decisions on MLX for local experimentation; compare semantics and calibration separately from hosted Jev. |
 | [typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) | Structured-decision comparison | A benchmark project for TypeSafe-shaped decisions; record whether a run uses the official API, a gateway, or an adapter. |
 | [PlayJev](https://github.com/OmniJev/PlayJev) | Open reproduction | Open 0.8B model that reads a game frame and scores the moves the game lists in one forward pass; weights, games and the reproduction script are public, and it is not the hosted Jev model. |
+| [When a Judgment Layer’s Self-Reported Fields Lie](https://doi.org/10.5281/zenodo.22901853) | Independent measurement, calibration and cost accounting | Jev is one of three judgment layers measured on identical items, not the sole subject; Murphy/Brier/ECE are computed against binary ground truth and the per-call costs come from a recorded ledger. Its contradiction finding rests on seven live readings with no JSON artifact behind them, which the write-up discloses in its own errata. |
 
 For every benchmark entry, prefer a committed dataset or fixture, a reproducible command, and a clear statement of whether the result measures Jev, an adapter, an open reproduction, or a different model with a similar interface.
 
