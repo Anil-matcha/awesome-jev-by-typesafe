@@ -504,6 +504,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 |---|---|---|
 | [Jev plays Snake](https://github.com/sorrycc/typesafe-snake) | Real-time game control: code generates legal moves and exact state facts, while Jev chooses one move per tick. | Repository |
 | [Home Assistant Jev](https://github.com/AboveColin/HA-Jev) | Expose `Noul`, `Choice`, and `Score` answers as automation entities and actions for household workflows. | Repository |
+| [GeekLink Jev Subtitle Translator](https://github.com/GeekLinkDev/jev-subtitle-translator) | Subtitle translation quality control: sends source–translation pairs as state and asks one `Noul` question per subtitle cue, while application code flags suspicious lines for human review without rewriting them. | [Jev request](https://github.com/GeekLinkDev/jev-subtitle-translator/blob/main/src/jev_subtitle_translator/openrouter.py) and [review policy](https://github.com/GeekLinkDev/jev-subtitle-translator/blob/main/src/jev_subtitle_translator/qc.py) |
 | [Jev MCP server](https://github.com/jkudish/jev-mcp) | Give coding agents typed claim verification, content screening, and semantic ranking tools. | Repository |
 | [Jev logs](https://github.com/reachjalil/jevlogs) | Annotate OpenTelemetry/log records with Jev decisions and optionally skip expensive analysis for low-value traces. | Repository |
 | [Jev trader](https://github.com/jarrodwatts/jev-trader) | Experimental sub-second market-side decision loop; the project documents a default dry-run and a separate live-trading path. | Repository |
