@@ -46,6 +46,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 - [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) — broader TypeSafe/System One index including official resources and community projects.
 - [valentynkit/awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) — CC0 and awesome-lint clean, sorted by what you would install, with a short "know before you build" section on the limits.
 - [MrJev/awesome-jev](https://github.com/MrJev/awesome-jev) — selective list behind a 10-star bar, paired with hands-on reviews at [mrjev.com](https://mrjev.com/best-jev-tools/) that record what each tool sends and where.
+- [jev-in-the-wild](https://github.com/Jessie-QingYu/jev-in-the-wild) — index of what people build with Jev that reaches past GitHub into Reddit, Hacker News and YouTube, and keeps a section for the benchmarks and reports where Jev did not work; machine-readable JSON with a schema, rebuilt daily.
 
 ## The short version
 
