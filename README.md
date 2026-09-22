@@ -569,6 +569,7 @@ Keep measured results separate from demos. A useful benchmark record includes th
 | Project | Focus | How to interpret it |
 |---|---|---|
 | [Bosun v3.1](https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b) | Open decision model | Apache-2.0 Qwen3 model family with public 0.6B and 1.7B weights and shipped `choice`/`score`/`noul` inference; it is a separate Jev-style alternative, not hosted Jev. |
+| [DecisionBench](https://github.com/Hanno-Labs/decision-bench) | Decision-model evaluation | Open runner with pinned document-grounded tasks and a native Jev adapter; inspect the model version, task mix, and scoring protocol before comparing results. |
 | [jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) | Evaluation and benchmark harnesses | Useful for comparing decision quality and operational behavior; inspect the dataset and protocol before reusing a number. |
 | [jev-korean-benchmark](https://github.com/mahlernim/jev-korean-benchmark) | Korean-language evaluation | A language-specific benchmark candidate; treat results as workload evidence rather than a general multilingual guarantee. |
 | [openjev-sglang](https://github.com/ekzhang/openjev-sglang) | Open reproduction | Jev-inspired/open-model infrastructure; it is not the hosted TypeSafe Jev model. |
