@@ -502,6 +502,7 @@ These are community projects, not TypeSafe endorsements. They show how the same 
 
 | Implementation | Use case | Evidence |
 |---|---|---|
+| [JevLoop](https://github.com/parkavenue9639/jevloop) | Experimental Python agent loop: Jev evaluates bounded workspace state with batched `Choice` action/target questions and `Noul`/`Score` signals, while application code owns confidence-based LLM arbitration, execution budgets, and Docker tool dispatch. | [Decision compiler and API call](https://github.com/parkavenue9639/jevloop/blob/c5557d08b866eae5890ef9d475242e3bbd83e90f/backend/jevloop/model.py) and [scoped paired case study](https://github.com/parkavenue9639/jevloop/blob/c5557d08b866eae5890ef9d475242e3bbd83e90f/docs/fastapi-case-study.md#english) |
 | [Jev plays Snake](https://github.com/sorrycc/typesafe-snake) | Real-time game control: code generates legal moves and exact state facts, while Jev chooses one move per tick. | Repository |
 | [Home Assistant Jev](https://github.com/AboveColin/HA-Jev) | Expose `Noul`, `Choice`, and `Score` answers as automation entities and actions for household workflows. | Repository |
 | [Jev MCP server](https://github.com/jkudish/jev-mcp) | Give coding agents typed claim verification, content screening, and semantic ranking tools. | Repository |
