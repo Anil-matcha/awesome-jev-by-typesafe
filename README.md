@@ -393,7 +393,7 @@ Use Jev to decide whether a turn needs a skill, tool, retrieval step, or expensi
 
 Evidence: [Agent skill](https://docs.typesafe.ai/agent-skill) and [skill-suggestion cookbook](https://docs.typesafe.ai/cookbooks/skill_suggestion).
 
-Community implementation: [Augustus](https://github.com/24601/Augustus) takes the desired software behavior as state, decomposes it into typed `Choice`, `Score`, and `Noul` questions about where semantic judgment belongs, and keeps thresholds, composition, and side effects in application code. It ships a decision-design card and requires a smallest falsifying experiment before a design is treated as settled. Independent agent skill, not an official TypeSafe product.
+Community implementation: [Augustus](https://github.com/24601/Augustus) equips agents to find, build, evaluate, and improve decision-model systems, including Software 3.0 workflows, using composition rules, evaluation harnesses, and bounded prompt/program optimization. TypeSafe Jev is the default hosted exemplar; exact constraints, authorization, and effects remain in code or explicit human policy. Independent agent skill with offline evaluators, not an official TypeSafe product or a bundled live Jev client.
 
 ### Recent workflow evaluations and cookbook patterns
 
