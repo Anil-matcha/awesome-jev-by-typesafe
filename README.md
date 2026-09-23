@@ -36,6 +36,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 - [open-business-agents](https://github.com/Anil-matcha/open-business-agents) — specialized business agents that can use Jev as a decision and safety layer.
 - [awesome-generative-ai-apps](https://github.com/Anil-matcha/awesome-generative-ai-apps) — production-oriented AI app templates where Jev can help with routing, guardrails, and verification.
 - [llm-wiki-agent](https://github.com/SamurAIGPT/llm-wiki-agent) — persistent, interlinked knowledge workflow that pairs naturally with semantic retrieval and citation checks.
+- [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) — daily arXiv/bioRxiv radar: one Noul per plain-English interest for every new paper, thresholds applied in code, published as a page and RSS from GitHub Actions; 501 papers for $0.0196 in a measured run, with `calibrate` for checking Jev's calibration on your own labels.
 
 ## Related directories
 
