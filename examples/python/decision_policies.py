@@ -70,6 +70,12 @@ def rag_decision(
 ) -> str:
     """Choose whether a retrieved passage can reach an answer model."""
 
+    probabilities = (answers_query, supports_answer, contains_injection)
+    if any(not isfinite(value) or not 0 <= value <= 1 for value in probabilities):
+        raise ValueError("Noul probabilities must be finite and between 0 and 1")
+    if not isfinite(relevance_score):
+        raise ValueError("relevance_score must be finite")
+
     if contains_injection >= 0.20:
         return "reject_injection_risk"
     if answers_query < 0.65 or supports_answer < 0.65:

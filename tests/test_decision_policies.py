@@ -50,6 +50,33 @@ class WeightedScoreTests(unittest.TestCase):
 
 
 class RagDecisionTests(unittest.TestCase):
+    def test_invalid_probability_is_rejected_before_acceptance(self):
+        with self.assertRaises(ValueError):
+            rag_decision(
+                answers_query=0.99,
+                supports_answer=0.99,
+                contains_injection=float("nan"),
+                relevance_score=2.0,
+            )
+
+    def test_out_of_range_probability_is_rejected(self):
+        with self.assertRaises(ValueError):
+            rag_decision(
+                answers_query=1.01,
+                supports_answer=0.99,
+                contains_injection=0.02,
+                relevance_score=2.0,
+            )
+
+    def test_non_finite_relevance_is_rejected(self):
+        with self.assertRaises(ValueError):
+            rag_decision(
+                answers_query=0.80,
+                supports_answer=0.77,
+                contains_injection=0.02,
+                relevance_score=float("nan"),
+            )
+
     def test_injection_risk_wins_over_relevance(self):
         self.assertEqual(
             rag_decision(
