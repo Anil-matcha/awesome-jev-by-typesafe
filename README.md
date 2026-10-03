@@ -575,6 +575,7 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [Jevbridge](https://github.com/gamesonrblx/Jevbridge) | Agent tooling | Agent integration bridge that makes Jev decisions available alongside coding-workflow tools. |
 | [jev-axi](https://github.com/shiftynick/jev-axi) | Decision CLI | Command-line primitives for picking, rating, checking, ranking, triaging, and guarding actions. |
 | [jev-guard](https://github.com/leepokai/jev-guard) | Guardrails | Experimental tool-call risk scoring with explicit deny, ask, and allow outcomes. |
+| [jev-engineering](https://github.com/eugeniughelbur/jev-engineering) | Guardrails | Claude Code PreToolUse gate: regex hard rules and a read-only allowlist run first, then one request with a destructive `Noul` and an allow/ask/deny `Choice`; code owns the thresholds, and auto mode approves only clear allows. Ships an offline test suite and a rerunnable 300-call injection test. |
 | [pg-jev](https://github.com/realZachi/pg-jev) | Data and SQL | PostgreSQL extension for asking typed semantic questions over table data. |
 | [jev-tree](https://github.com/reachjalil/jev-tree) | Classification | Hierarchical decision-tree workflow for routing high-cardinality categories with Jev. |
 | [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast) | Browser use | Jev chooses the browser operation and element while a smaller model writes text, keeping action selection explicit. |
