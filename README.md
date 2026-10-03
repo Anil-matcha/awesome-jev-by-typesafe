@@ -37,6 +37,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 - [awesome-generative-ai-apps](https://github.com/Anil-matcha/awesome-generative-ai-apps) — production-oriented AI app templates where Jev can help with routing, guardrails, and verification.
 - [llm-wiki-agent](https://github.com/SamurAIGPT/llm-wiki-agent) — persistent, interlinked knowledge workflow that pairs naturally with semantic retrieval and citation checks.
 - [Paper Radar](https://github.com/Eliot5566/JEV-Paper-Radar) — daily arXiv/bioRxiv radar: one Noul per plain-English interest for every new paper, thresholds applied in code, published as a page and RSS from GitHub Actions; 501 papers for $0.0196 in a measured run, with `calibrate` for checking Jev's calibration on your own labels.
+- [How to Use Jev](https://howtousejev.com/blog) — independent guide site with 19 free articles written against `jev-1.13.0`: writing `Choice`, `Score`, and `Noul` questions, picking confidence thresholds in code, averaging out option-order effects in one request, and a summary of published prompt-injection tests with links to each source; full text at [llms-full.txt](https://howtousejev.com/llms-full.txt). Not affiliated with TypeSafe; paid interactive courses are sold separately.
 
 ## Related directories
 
