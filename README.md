@@ -41,6 +41,7 @@ Use it to classify, route, score, detect, rank, extract, verify, and gate automa
 
 ## Related directories
 
+- [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts) — 43 field-tested Jev question patterns (Choice/Score/Noul) with templates, thresholds, and failure modes, plus 10 anti-patterns. CC0, bilingual EN/中文.
 - [Awesome Jev directory](https://awesomejev.com/) — searchable, daily-refreshed directory of Jev repositories, live demos, benchmarks, and articles; use it for discovery, not as an endorsement.
 - [yibie/awesome-jev](https://github.com/yibie/awesome-jev) — high-signal field guide with explicit inclusion and evidence rules.
 - [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) — source-backed ecosystem list organized around SDKs, agent tooling, workflows, games, reproductions, and evaluation.
