@@ -2,7 +2,7 @@
 
 > A curated list of open source alternatives to popular proprietary software and SaaS, with licenses and GitHub stars.
 
-Looking for a free, self-hostable replacement for a paid tool? Find the tool below and pick an alternative. Contributions are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
+Looking for a free, self-hostable replacement for a paid tool? Find the tool below and pick an alternative. **Want to add yours? [Submit it here](../../issues/new?template=add-alternative.yml)**, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
