@@ -27,7 +27,7 @@
     "name": "Logseq",
     "repo": "logseq/logseq",
     "license": "AGPL-3.0",
-    "description": "Privacy-first outliner and knowledge base."
+    "description": "Privacy-first outliner for notes and knowledge. No native databases."
    },
    {
     "name": "Huly",
@@ -129,7 +129,7 @@
     "name": "PostHog",
     "repo": "PostHog/posthog",
     "license": "MIT",
-    "description": "Product analytics, session replay and feature flags."
+    "description": "Product analytics suite with session replay. Web analytics is one part."
    },
    {
     "name": "matomo",
@@ -217,13 +217,13 @@
     "name": "Dokku",
     "repo": "dokku/dokku",
     "license": "MIT",
-    "description": "Docker-powered mini-Heroku you run yourself."
+    "description": "Self-hosted Heroku-style PaaS. Lacks preview deploys and edge features."
    },
    {
     "name": "CapRover",
     "repo": "caprover/caprover",
     "license": "Apache-2.0",
-    "description": "Scalable PaaS built on Docker and nginx."
+    "description": "Self-hosted PaaS on Docker and nginx. Covers hosting and deploys only."
    },
    {
     "name": "dokploy",
@@ -339,13 +339,13 @@
     "name": "Nextcloud",
     "repo": "nextcloud/server",
     "license": "AGPL-3.0",
-    "description": "Self-hosted file sync, share and collaboration platform."
+    "description": "Self-hosted file sync, sharing and collaboration platform."
    },
    {
     "name": "Syncthing",
     "repo": "syncthing/syncthing",
     "license": "MPL-2.0",
-    "description": "Continuous peer-to-peer file synchronization."
+    "description": "Peer-to-peer file sync. No cloud storage or share links."
    }
   ]
  },
@@ -365,7 +365,7 @@
     "name": "Vaultwarden",
     "repo": "dani-garcia/vaultwarden",
     "license": "AGPL-3.0",
-    "description": "Lightweight Bitwarden-compatible server."
+    "description": "Self-hosted Bitwarden-compatible server."
    },
    {
     "name": "KeePassXC",
@@ -385,7 +385,7 @@
     "name": "Krita",
     "repo": "KDE/krita",
     "license": "GPL-3.0",
-    "description": "Professional digital painting and illustration."
+    "description": "Digital painting and illustration. For photo editing, see GIMP."
    },
    {
     "name": "GIMP",
@@ -618,7 +618,7 @@
     "name": "Listmonk",
     "repo": "knadh/listmonk",
     "license": "AGPL-3.0",
-    "description": "High-performance self-hosted newsletter manager."
+    "description": "Newsletter and mailing list manager. No automation workflows."
    },
    {
     "name": "forwardemail.net",
@@ -644,7 +644,7 @@
     "name": "Saleor",
     "repo": "saleor/saleor",
     "license": "BSD-3-Clause",
-    "description": "GraphQL-first headless commerce platform."
+    "description": "Headless commerce backend. No storefront out of the box."
    }
   ]
  },
@@ -672,7 +672,7 @@
     "name": "Grafana",
     "repo": "grafana/grafana",
     "license": "AGPL-3.0",
-    "description": "Dashboards and observability."
+    "description": "Dashboards and metrics for monitoring. Usually paired with Prometheus."
    },
    {
     "name": "SigNoz",
@@ -714,6 +714,12 @@
   "category": "AI",
   "description": "AI chat assistant.",
   "alternatives": [
+   {
+    "name": "open-spaces",
+    "repo": "Anil-matcha/open-spaces",
+    "license": "MIT",
+    "description": "Free, open-source alternative to ChatGPT Spaces: a self-hostable AI workspace for shared pages and conversations."
+   },
    {
     "name": "Open WebUI",
     "repo": "open-webui/open-webui",
@@ -770,13 +776,13 @@
     "name": "ComfyUI",
     "repo": "comfyanonymous/ComfyUI",
     "license": "GPL-3.0",
-    "description": "Node-based diffusion workflow engine."
+    "description": "Node-based diffusion workflow engine. Quality depends on the model you load."
    },
    {
     "name": "Stable Diffusion WebUI",
     "repo": "AUTOMATIC1111/stable-diffusion-webui",
     "license": "AGPL-3.0",
-    "description": "Browser interface for Stable Diffusion."
+    "description": "Self-hosted image generation with Stable Diffusion models."
    }
   ]
  },
@@ -802,16 +808,24 @@
  },
  {
   "slug": "miro",
-  "name": "Miro / Lucidchart",
+  "name": "Miro",
   "category": "Design",
-  "description": "Whiteboards and diagrams.",
+  "description": "Online whiteboard for collaboration.",
   "alternatives": [
    {
     "name": "Excalidraw",
     "repo": "excalidraw/excalidraw",
     "license": "MIT",
     "description": "Virtual hand-drawn style whiteboard."
-   },
+   }
+  ]
+ },
+ {
+  "slug": "lucidchart",
+  "name": "Lucidchart",
+  "category": "Design",
+  "description": "Diagramming and flowcharts.",
+  "alternatives": [
    {
     "name": "draw.io",
     "repo": "jgraph/drawio",
@@ -910,7 +924,7 @@
     "name": "Metabase",
     "repo": "metabase/metabase",
     "license": "AGPL-3.0",
-    "description": "Business intelligence for everyone."
+    "description": "Lightweight BI for dashboards and questions without SQL."
    },
    {
     "name": "Apache Superset",
@@ -1107,10 +1121,10 @@
   "description": "Semrush: paid SaaS product.",
   "alternatives": [
    {
-    "name": "open-seo",
-    "repo": "every-app/open-seo",
-    "license": "MIT",
-    "description": "Open source alternative to Semrush and Ahrefs"
+    "name": "geo-checker",
+    "repo": "SamurAIGPT/geo-checker",
+    "license": "See repo",
+    "description": "Open-source AI GEO (Generative Engine Optimization) auditor"
    }
   ]
  },
@@ -1404,6 +1418,12 @@
   "category": "Video",
   "description": "Opus Clip: paid SaaS product.",
   "alternatives": [
+   {
+    "name": "ai-clipping-comfyui",
+    "repo": "Anil-matcha/ai-clipping-comfyui",
+    "license": "MIT",
+    "description": "Free open-source Opus Clip alternative for ComfyUI"
+   },
    {
     "name": "AI-Youtube-Shorts-Generator",
     "repo": "Anil-matcha/AI-Youtube-Shorts-Generator",
@@ -1839,10 +1859,10 @@
   "description": "Higgsfield: paid SaaS product.",
   "alternatives": [
    {
-    "name": "HeliosGen",
-    "repo": "SegFault42/HeliosGen",
-    "license": "See repo",
-    "description": "🏆 Self Hosted Gen AI desktop app. Free alternative to Higgsfield, OpenArt, Freepik...."
+    "name": "Open-Generative-AI",
+    "repo": "Anil-matcha/Open-Generative-AI",
+    "license": "MIT",
+    "description": "Unrestricted Open-source alternative to AI video platforms"
    }
   ]
  },
@@ -1853,10 +1873,10 @@
   "description": "OpenArt: paid SaaS product.",
   "alternatives": [
    {
-    "name": "HeliosGen",
-    "repo": "SegFault42/HeliosGen",
-    "license": "See repo",
-    "description": "🏆 Self Hosted Gen AI desktop app. Free alternative to Higgsfield, OpenArt, Freepik...."
+    "name": "Open-Generative-AI",
+    "repo": "Anil-matcha/Open-Generative-AI",
+    "license": "MIT",
+    "description": "Unrestricted Open-source alternative to AI video platforms"
    }
   ]
  },
@@ -1867,10 +1887,16 @@
   "description": "Freepik: paid SaaS product.",
   "alternatives": [
    {
-    "name": "HeliosGen",
-    "repo": "SegFault42/HeliosGen",
-    "license": "See repo",
-    "description": "🏆 Self Hosted Gen AI desktop app. Free alternative to Higgsfield, OpenArt, Freepik...."
+    "name": "Vibe-Workflow",
+    "repo": "SamurAIGPT/Vibe-Workflow",
+    "license": "MIT",
+    "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image & video pipelines"
+   },
+   {
+    "name": "Open-Generative-AI",
+    "repo": "Anil-matcha/Open-Generative-AI",
+    "license": "MIT",
+    "description": "Unrestricted Open-source alternative to AI video platforms"
    }
   ]
  },
@@ -1881,10 +1907,16 @@
   "description": "Buffer: paid SaaS product.",
   "alternatives": [
    {
-    "name": "brightbean-studio",
-    "repo": "brightbeanxyz/brightbean-studio",
-    "license": "AGPL-3.0",
-    "description": "Open-source, self-hostable social media management platform. Schedule, publish, and manage content across 10+ platforms from a single dashboard. Free alternativ"
+    "name": "social-post",
+    "repo": "SamurAIGPT/social-post",
+    "license": "See repo",
+    "description": "Open-source AI social media post generator"
+   },
+   {
+    "name": "Free-AI-Social-Media-Scheduler",
+    "repo": "Anil-matcha/Free-AI-Social-Media-Scheduler",
+    "license": "MIT",
+    "description": "Free open-source AI social media scheduler — self-hostable alternative to Postiz, Buffer, and Hootsuite with built-in AI content generation."
    }
   ]
  },
@@ -2293,6 +2325,702 @@
     "repo": "SamurAIGPT/Vibe-Workflow",
     "license": "MIT",
     "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image & video pipelines"
+   }
+  ]
+ },
+ {
+  "slug": "claude-cowork",
+  "name": "Claude Cowork",
+  "category": "AI",
+  "description": "Claude Cowork: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "open-dots",
+    "repo": "Anil-matcha/open-dots",
+    "license": "See repo",
+    "description": "Open-source, self-hosted AI agent workspace and alternative to OpenAI Dots, Meta Muse, Grok Bot, Instinct, Manus Cue, Claude Cowork, and ChatGPT agent. MIT-lice"
+   }
+  ]
+ },
+ {
+  "slug": "chatgpt-agent",
+  "name": "ChatGPT Agent",
+  "category": "AI",
+  "description": "ChatGPT Agent: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "open-dots",
+    "repo": "Anil-matcha/open-dots",
+    "license": "See repo",
+    "description": "Open-source, self-hosted AI agent workspace and alternative to OpenAI Dots, Meta Muse, Grok Bot, Instinct, Manus Cue, Claude Cowork, and ChatGPT agent. MIT-lice"
+   }
+  ]
+ },
+ {
+  "slug": "grok-bot",
+  "name": "Grok Bot",
+  "category": "AI",
+  "description": "Grok Bot: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "open-grok-bot",
+    "repo": "Anil-matcha/open-grok-bot",
+    "license": "See repo",
+    "description": "Open-source alternative to Grok bot with a FastAPI API, Next.js UI, governed computer use, Docker/remote runtimes, approvals, connectors, and local-first state."
+   },
+   {
+    "name": "open-dots",
+    "repo": "Anil-matcha/open-dots",
+    "license": "See repo",
+    "description": "Open-source, self-hosted AI agent workspace and alternative to OpenAI Dots, Meta Muse, Grok Bot, Instinct, Manus Cue, Claude Cowork, and ChatGPT agent. MIT-lice"
+   }
+  ]
+ },
+ {
+  "slug": "vidyo-ai",
+  "name": "Vidyo.ai",
+  "category": "Video",
+  "description": "Vidyo.ai: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "AI-Youtube-Shorts-Generator",
+    "repo": "Anil-matcha/AI-Youtube-Shorts-Generator",
+    "license": "MIT",
+    "description": "Open-source alternative to Opus Clip, Vidyo.ai, Klap & SubMagic. Turn long-form YouTube videos into viral 9:16 shorts using LLM highlight detection, Whisper tra"
+   }
+  ]
+ },
+ {
+  "slug": "klap",
+  "name": "Klap",
+  "category": "Video",
+  "description": "Klap: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "AI-Youtube-Shorts-Generator",
+    "repo": "Anil-matcha/AI-Youtube-Shorts-Generator",
+    "license": "MIT",
+    "description": "Open-source alternative to Opus Clip, Vidyo.ai, Klap & SubMagic. Turn long-form YouTube videos into viral 9:16 shorts using LLM highlight detection, Whisper tra"
+   }
+  ]
+ },
+ {
+  "slug": "submagic",
+  "name": "SubMagic",
+  "category": "Video",
+  "description": "SubMagic: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "AI-Youtube-Shorts-Generator",
+    "repo": "Anil-matcha/AI-Youtube-Shorts-Generator",
+    "license": "MIT",
+    "description": "Open-source alternative to Opus Clip, Vidyo.ai, Klap & SubMagic. Turn long-form YouTube videos into viral 9:16 shorts using LLM highlight detection, Whisper tra"
+   }
+  ]
+ },
+ {
+  "slug": "arcade-dev",
+  "name": "Arcade.dev",
+  "category": "Automation",
+  "description": "Arcade.dev: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "open-agent-connector",
+    "repo": "Anil-matcha/open-agent-connector",
+    "license": "See repo",
+    "description": "Open-source, self-hosted alternative to Composio, Nango, Merge.dev, and Arcade.dev for AI agent integrations. Run GitHub, Slack, Hacker News, and custom HTTP ac"
+   }
+  ]
+ },
+ {
+  "slug": "lovart",
+  "name": "Lovart",
+  "category": "Design",
+  "description": "Lovart: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "Open-AI-Design-Agent",
+    "repo": "Anil-matcha/Open-AI-Design-Agent",
+    "license": "MIT",
+    "description": "Open-source AI design agent"
+   }
+  ]
+ },
+ {
+  "slug": "galileo-ai",
+  "name": "Galileo AI",
+  "category": "Design",
+  "description": "Galileo AI: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "Open-AI-Design-Agent",
+    "repo": "Anil-matcha/Open-AI-Design-Agent",
+    "license": "MIT",
+    "description": "Open-source AI design agent"
+   }
+  ]
+ },
+ {
+  "slug": "magic-patterns",
+  "name": "Magic Patterns",
+  "category": "Design",
+  "description": "Magic Patterns: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "Open-AI-Design-Agent",
+    "repo": "Anil-matcha/Open-AI-Design-Agent",
+    "license": "MIT",
+    "description": "Open-source AI design agent"
+   }
+  ]
+ },
+ {
+  "slug": "arcads",
+  "name": "Arcads",
+  "category": "Marketing",
+  "description": "Arcads: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "Open-AI-UGC",
+    "repo": "Anil-matcha/Open-AI-UGC",
+    "license": "MIT",
+    "description": "Open AI UGC"
+   }
+  ]
+ },
+ {
+  "slug": "makeugc",
+  "name": "MakeUGC",
+  "category": "Marketing",
+  "description": "MakeUGC: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "Open-AI-UGC",
+    "repo": "Anil-matcha/Open-AI-UGC",
+    "license": "MIT",
+    "description": "Open AI UGC"
+   }
+  ]
+ },
+ {
+  "slug": "character-ai",
+  "name": "Character.AI",
+  "category": "AI",
+  "description": "Character.AI: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-character-studio",
+    "repo": "SamurAIGPT/ai-character-studio",
+    "license": "See repo",
+    "description": "Open-source AI character creator & roleplay chat studio"
+   },
+   {
+    "name": "open-character-ai",
+    "repo": "Anil-matcha/open-character-ai",
+    "license": "See repo",
+    "description": "Open-source Character.AI alternative"
+   }
+  ]
+ },
+ {
+  "slug": "replika",
+  "name": "Replika",
+  "category": "AI",
+  "description": "Replika: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-character-studio",
+    "repo": "SamurAIGPT/ai-character-studio",
+    "license": "See repo",
+    "description": "Open-source AI character creator & roleplay chat studio"
+   }
+  ]
+ },
+ {
+  "slug": "hootsuite",
+  "name": "Hootsuite",
+  "category": "Marketing",
+  "description": "Hootsuite: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "Free-AI-Social-Media-Scheduler",
+    "repo": "Anil-matcha/Free-AI-Social-Media-Scheduler",
+    "license": "MIT",
+    "description": "Free open-source AI social media scheduler — self-hostable alternative to Postiz, Buffer, and Hootsuite with built-in AI content generation."
+   }
+  ]
+ },
+ {
+  "slug": "claude-tag",
+  "name": "Claude Tag",
+  "category": "Communication",
+  "description": "Claude Tag: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "open-claude-tag",
+    "repo": "Anil-matcha/open-claude-tag",
+    "license": "MIT",
+    "description": "Self-hostable channel-native AI teammate for Slack. Open source alternative to Claude Tag. LLM-agnostic."
+   }
+  ]
+ },
+ {
+  "slug": "teal",
+  "name": "Teal",
+  "category": "Productivity",
+  "description": "Teal: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-resume-builder",
+    "repo": "SamurAIGPT/ai-resume-builder",
+    "license": "See repo",
+    "description": "Open-source AI resume builder & optimizer"
+   }
+  ]
+ },
+ {
+  "slug": "kickresume",
+  "name": "Kickresume",
+  "category": "Productivity",
+  "description": "Kickresume: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-resume-builder",
+    "repo": "SamurAIGPT/ai-resume-builder",
+    "license": "See repo",
+    "description": "Open-source AI resume builder & optimizer"
+   }
+  ]
+ },
+ {
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "category": "AI",
+  "description": "ElevenLabs: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "my-podcast",
+    "repo": "SamurAIGPT/my-podcast",
+    "license": "See repo",
+    "description": "Open-source AI voiceover & podcast narration studio"
+   }
+  ]
+ },
+ {
+  "slug": "murf-ai",
+  "name": "Murf AI",
+  "category": "AI",
+  "description": "Murf AI: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "my-podcast",
+    "repo": "SamurAIGPT/my-podcast",
+    "license": "See repo",
+    "description": "Open-source AI voiceover & podcast narration studio"
+   }
+  ]
+ },
+ {
+  "slug": "watermarkremover-io",
+  "name": "Watermarkremover.io",
+  "category": "Design",
+  "description": "Watermarkremover.io: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "clearmark-ai",
+    "repo": "SamurAIGPT/clearmark-ai",
+    "license": "See repo",
+    "description": "Open-source AI watermark remover"
+   }
+  ]
+ },
+ {
+  "slug": "hitpaw",
+  "name": "HitPaw",
+  "category": "Design",
+  "description": "HitPaw: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "clearmark-ai",
+    "repo": "SamurAIGPT/clearmark-ai",
+    "license": "See repo",
+    "description": "Open-source AI watermark remover"
+   }
+  ]
+ },
+ {
+  "slug": "looka",
+  "name": "Looka",
+  "category": "Design",
+  "description": "Looka: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-logo-studio",
+    "repo": "SamurAIGPT/ai-logo-studio",
+    "license": "See repo",
+    "description": "Open-source AI logo generator & brand identity studio"
+   }
+  ]
+ },
+ {
+  "slug": "brandmark",
+  "name": "Brandmark",
+  "category": "Design",
+  "description": "Brandmark: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-logo-studio",
+    "repo": "SamurAIGPT/ai-logo-studio",
+    "license": "See repo",
+    "description": "Open-source AI logo generator & brand identity studio"
+   }
+  ]
+ },
+ {
+  "slug": "photoroom",
+  "name": "Photoroom",
+  "category": "Design",
+  "description": "Photoroom: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "resale-photo-enhancer",
+    "repo": "SamurAIGPT/resale-photo-enhancer",
+    "license": "See repo",
+    "description": "Open-source AI product photo studio for resellers"
+   }
+  ]
+ },
+ {
+  "slug": "remini",
+  "name": "Remini",
+  "category": "AI",
+  "description": "Remini: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-wedding-photo",
+    "repo": "SamurAIGPT/ai-wedding-photo",
+    "license": "See repo",
+    "description": "Open-source AI wedding photo generator"
+   },
+   {
+    "name": "old-photo-restore",
+    "repo": "SamurAIGPT/old-photo-restore",
+    "license": "See repo",
+    "description": "Open-source AI old photo restoration tool"
+   }
+  ]
+ },
+ {
+  "slug": "facetune",
+  "name": "Facetune",
+  "category": "AI",
+  "description": "Facetune: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-wedding-photo",
+    "repo": "SamurAIGPT/ai-wedding-photo",
+    "license": "See repo",
+    "description": "Open-source AI wedding photo generator"
+   }
+  ]
+ },
+ {
+  "slug": "lensa-ai",
+  "name": "Lensa AI",
+  "category": "AI",
+  "description": "Lensa AI: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-royal-portrait",
+    "repo": "SamurAIGPT/ai-royal-portrait",
+    "license": "See repo",
+    "description": "Open-source AI royal portrait & style transformation tool"
+   },
+   {
+    "name": "magicself-ai",
+    "repo": "SamurAIGPT/magicself-ai",
+    "license": "See repo",
+    "description": "Open-source AI selfie-to-artwork generator"
+   }
+  ]
+ },
+ {
+  "slug": "prisma",
+  "name": "Prisma",
+  "category": "AI",
+  "description": "Prisma: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "magicself-ai",
+    "repo": "SamurAIGPT/magicself-ai",
+    "license": "See repo",
+    "description": "Open-source AI selfie-to-artwork generator"
+   }
+  ]
+ },
+ {
+  "slug": "flair-ai",
+  "name": "Flair AI",
+  "category": "Design",
+  "description": "Flair AI: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "amazon-product-studio",
+    "repo": "SamurAIGPT/amazon-product-studio",
+    "license": "See repo",
+    "description": "Open-source AI product photography studio for Amazon sellers"
+   }
+  ]
+ },
+ {
+  "slug": "booth-ai",
+  "name": "Booth AI",
+  "category": "Design",
+  "description": "Booth AI: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "amazon-product-studio",
+    "repo": "SamurAIGPT/amazon-product-studio",
+    "license": "See repo",
+    "description": "Open-source AI product photography studio for Amazon sellers"
+   }
+  ]
+ },
+ {
+  "slug": "pebblely",
+  "name": "Pebblely",
+  "category": "Design",
+  "description": "Pebblely: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "pet-product-studio",
+    "repo": "SamurAIGPT/pet-product-studio",
+    "license": "See repo",
+    "description": "Open-source AI pet product ad generator"
+   }
+  ]
+ },
+ {
+  "slug": "surfer-seo",
+  "name": "Surfer SEO",
+  "category": "Marketing",
+  "description": "Surfer SEO: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "geo-checker",
+    "repo": "SamurAIGPT/geo-checker",
+    "license": "See repo",
+    "description": "Open-source AI GEO (Generative Engine Optimization) auditor"
+   }
+  ]
+ },
+ {
+  "slug": "botika",
+  "name": "Botika",
+  "category": "E-commerce",
+  "description": "Botika: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-tryon",
+    "repo": "SamurAIGPT/ai-tryon",
+    "license": "See repo",
+    "description": "Open-source AI virtual try-on tool"
+   }
+  ]
+ },
+ {
+  "slug": "lalaland",
+  "name": "Lalaland",
+  "category": "E-commerce",
+  "description": "Lalaland: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-tryon",
+    "repo": "SamurAIGPT/ai-tryon",
+    "license": "See repo",
+    "description": "Open-source AI virtual try-on tool"
+   }
+  ]
+ },
+ {
+  "slug": "youcam-hair",
+  "name": "YouCam Hair",
+  "category": "AI",
+  "description": "YouCam Hair: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-hair-style-simulator",
+    "repo": "SamurAIGPT/ai-hair-style-simulator",
+    "license": "See repo",
+    "description": "Open-source AI hairstyle simulator & virtual hair makeover"
+   }
+  ]
+ },
+ {
+  "slug": "youcam-makeup",
+  "name": "YouCam Makeup",
+  "category": "AI",
+  "description": "YouCam Makeup: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-professional-makeup-generator",
+    "repo": "SamurAIGPT/ai-professional-makeup-generator",
+    "license": "See repo",
+    "description": "Open-source AI virtual makeup try-on tool"
+   }
+  ]
+ },
+ {
+  "slug": "modiface",
+  "name": "ModiFace",
+  "category": "AI",
+  "description": "ModiFace: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-professional-makeup-generator",
+    "repo": "SamurAIGPT/ai-professional-makeup-generator",
+    "license": "See repo",
+    "description": "Open-source AI virtual makeup try-on tool"
+   }
+  ]
+ },
+ {
+  "slug": "roomgpt",
+  "name": "RoomGPT",
+  "category": "Design",
+  "description": "RoomGPT: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-room-declutter",
+    "repo": "SamurAIGPT/ai-room-declutter",
+    "license": "See repo",
+    "description": "Open-source AI room declutter & interior redesign tool"
+   }
+  ]
+ },
+ {
+  "slug": "reimagine-home",
+  "name": "Reimagine Home",
+  "category": "Design",
+  "description": "Reimagine Home: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-room-declutter",
+    "repo": "SamurAIGPT/ai-room-declutter",
+    "license": "See repo",
+    "description": "Open-source AI room declutter & interior redesign tool"
+   }
+  ]
+ },
+ {
+  "slug": "lavender",
+  "name": "Lavender",
+  "category": "Marketing",
+  "description": "Lavender: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "mail-wise",
+    "repo": "SamurAIGPT/mail-wise",
+    "license": "See repo",
+    "description": "Open-source AI email composer & cold outreach assistant"
+   }
+  ]
+ },
+ {
+  "slug": "reply-io",
+  "name": "Reply.io",
+  "category": "Marketing",
+  "description": "Reply.io: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "mail-wise",
+    "repo": "SamurAIGPT/mail-wise",
+    "license": "See repo",
+    "description": "Open-source AI email composer & cold outreach assistant"
+   }
+  ]
+ },
+ {
+  "slug": "promptbase",
+  "name": "PromptBase",
+  "category": "AI",
+  "description": "PromptBase: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "prompt-architect",
+    "repo": "SamurAIGPT/prompt-architect",
+    "license": "See repo",
+    "description": "Open-source AI prompt engineering workspace"
+   }
+  ]
+ },
+ {
+  "slug": "promptperfect",
+  "name": "PromptPerfect",
+  "category": "AI",
+  "description": "PromptPerfect: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "prompt-architect",
+    "repo": "SamurAIGPT/prompt-architect",
+    "license": "See repo",
+    "description": "Open-source AI prompt engineering workspace"
+   }
+  ]
+ },
+ {
+  "slug": "ink-hunter",
+  "name": "Ink Hunter",
+  "category": "AI",
+  "description": "Ink Hunter: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-tattoo-try-on",
+    "repo": "SamurAIGPT/ai-tattoo-try-on",
+    "license": "See repo",
+    "description": "Open-source AI tattoo try-on & virtual placement simulator"
+   }
+  ]
+ },
+ {
+  "slug": "tattoosmart",
+  "name": "Tattoosmart",
+  "category": "AI",
+  "description": "Tattoosmart: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-tattoo-try-on",
+    "repo": "SamurAIGPT/ai-tattoo-try-on",
+    "license": "See repo",
+    "description": "Open-source AI tattoo try-on & virtual placement simulator"
+   }
+  ]
+ },
+ {
+  "slug": "faceapp",
+  "name": "FaceApp",
+  "category": "AI",
+  "description": "FaceApp: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-kid-to-adult-prediction",
+    "repo": "SamurAIGPT/ai-kid-to-adult-prediction",
+    "license": "See repo",
+    "description": "Open-source AI age progression & kid-to-adult prediction tool"
+   }
+  ]
+ },
+ {
+  "slug": "shipfast",
+  "name": "ShipFast",
+  "category": "Developer Tools",
+  "description": "ShipFast: paid SaaS product.",
+  "alternatives": [
+   {
+    "name": "ai-saas-starter",
+    "repo": "SamurAIGPT/ai-saas-starter",
+    "license": "See repo",
+    "description": "Production-ready Next.js AI SaaS boilerplate"
    }
   ]
  }

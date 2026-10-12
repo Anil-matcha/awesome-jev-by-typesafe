@@ -54,6 +54,8 @@ out += `## Notes
 - **Discovered entries:** more pairs were found with the [GitHub Search API](https://docs.github.com/en/rest/search/search#search-repositories) by looking for public repositories whose description says "alternative to X". Those entries reuse the repository's own GitHub description, and a human decided which targets are paid SaaS products.
 - **Stars, licenses and last-push dates:** pulled from the [GitHub REST API](https://docs.github.com/en/rest/repos/repos#get-a-repository) and refreshed weekly. Where GitHub can't detect a license, the entry says "See repo".
 - **Community submissions:** added through the [issue form](../../issues/new?template=add-alternative.yml) and pull requests.
+- **Verification:** the original curated pairs were cross-checked against independent sources (comparison articles and directories). Where a project replaces only part of a product, its description says so.
+- **Disclosure:** some listed projects are maintained by the author of this list ([Anil-matcha](https://github.com/Anil-matcha) and [SamurAIGPT](https://github.com/SamurAIGPT)). Each one's own repository description claims it as an alternative to the listed app.
 - This list does not copy data from AlternativeTo, OpenAlternative or other directories.
 
 ## Contributing
