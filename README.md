@@ -1,4 +1,4 @@
-# Awesome Open Source Alternatives [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Open Source SaaS Alternatives [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of open source alternatives to popular proprietary software and SaaS, with licenses and GitHub stars.
 
