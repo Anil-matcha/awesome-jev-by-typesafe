@@ -1,0 +1,119 @@
+[
+  {"slug":"notion","name":"Notion","category":"Productivity","description":"All-in-one workspace for notes, docs and wikis.","alternatives":[
+    {"name":"AppFlowy","repo":"AppFlowy-IO/AppFlowy","license":"AGPL-3.0","description":"Privacy-first Notion alternative built with Flutter and Rust."},
+    {"name":"AFFiNE","repo":"toeverything/AFFiNE","license":"MIT","description":"Docs, whiteboards and databases in one local-first workspace."},
+    {"name":"SiYuan","repo":"siyuan-note/siyuan","license":"AGPL-3.0","description":"Local-first personal knowledge management system."},
+    {"name":"Logseq","repo":"logseq/logseq","license":"AGPL-3.0","description":"Privacy-first outliner and knowledge base."}]},
+  {"slug":"slack","name":"Slack","category":"Communication","description":"Team chat and collaboration.","alternatives":[
+    {"name":"Mattermost","repo":"mattermost/mattermost","license":"MIT / AGPL-3.0","description":"Self-hosted secure team collaboration platform."},
+    {"name":"Rocket.Chat","repo":"RocketChat/Rocket.Chat","license":"MIT","description":"Open source team chat with omnichannel support."},
+    {"name":"Zulip","repo":"zulip/zulip","license":"Apache-2.0","description":"Threaded team chat that keeps conversations organized."}]},
+  {"slug":"zoom","name":"Zoom","category":"Communication","description":"Video conferencing.","alternatives":[
+    {"name":"Jitsi Meet","repo":"jitsi/jitsi-meet","license":"Apache-2.0","description":"Secure, scalable video conferencing you can self-host."}]},
+  {"slug":"google-analytics","name":"Google Analytics","category":"Analytics","description":"Website and product analytics.","alternatives":[
+    {"name":"Plausible","repo":"plausible/analytics","license":"AGPL-3.0","description":"Lightweight, privacy-friendly web analytics."},
+    {"name":"Umami","repo":"umami-software/umami","license":"MIT","description":"Simple, fast, privacy-focused analytics."},
+    {"name":"PostHog","repo":"PostHog/posthog","license":"MIT","description":"Product analytics, session replay and feature flags."}]},
+  {"slug":"firebase","name":"Firebase","category":"Developer Tools","description":"Backend-as-a-service for apps.","alternatives":[
+    {"name":"Supabase","repo":"supabase/supabase","license":"Apache-2.0","description":"Postgres database, auth, storage and realtime."},
+    {"name":"Appwrite","repo":"appwrite/appwrite","license":"BSD-3-Clause","description":"Backend platform for web, mobile and Flutter apps."},
+    {"name":"PocketBase","repo":"pocketbase/pocketbase","license":"MIT","description":"Single-file backend with realtime database and auth."}]},
+  {"slug":"vercel","name":"Vercel","category":"Developer Tools","description":"Frontend hosting and deployment platform.","alternatives":[
+    {"name":"Coolify","repo":"coollabsio/coolify","license":"Apache-2.0","description":"Self-hostable alternative to Vercel, Heroku and Netlify."},
+    {"name":"Dokku","repo":"dokku/dokku","license":"MIT","description":"Docker-powered mini-Heroku you run yourself."},
+    {"name":"CapRover","repo":"caprover/caprover","license":"Apache-2.0","description":"Scalable PaaS built on Docker and nginx."}]},
+  {"slug":"auth0","name":"Auth0","category":"Developer Tools","description":"Identity and authentication platform.","alternatives":[
+    {"name":"Keycloak","repo":"keycloak/keycloak","license":"Apache-2.0","description":"Identity and access management for apps and services."},
+    {"name":"Ory Kratos","repo":"ory/kratos","license":"Apache-2.0","description":"API-first identity and user management."},
+    {"name":"SuperTokens","repo":"supertokens/supertokens-core","license":"Apache-2.0","description":"Open source authentication with your own database."}]},
+  {"slug":"airtable","name":"Airtable","category":"Productivity","description":"Spreadsheet-database hybrid.","alternatives":[
+    {"name":"NocoDB","repo":"nocodb/nocodb","license":"AGPL-3.0","description":"Turns any database into a smart spreadsheet."},
+    {"name":"Baserow","repo":"bram2w/baserow","license":"MIT","description":"No-code database and application builder."}]},
+  {"slug":"zapier","name":"Zapier","category":"Automation","description":"No-code workflow automation.","alternatives":[
+    {"name":"Activepieces","repo":"activepieces/activepieces","license":"MIT","description":"No-code business automation with an extensible piece system."},
+    {"name":"Huginn","repo":"huginn/huginn","license":"MIT","description":"Build agents that monitor and act on your behalf."},
+    {"name":"n8n","repo":"n8n-io/n8n","license":"Sustainable Use (fair-code)","description":"Workflow automation with a visual editor. Fair-code, not OSI open source."}]},
+  {"slug":"dropbox","name":"Dropbox","category":"Storage","description":"Cloud file storage and sync.","alternatives":[
+    {"name":"Nextcloud","repo":"nextcloud/server","license":"AGPL-3.0","description":"Self-hosted file sync, share and collaboration platform."},
+    {"name":"Syncthing","repo":"syncthing/syncthing","license":"MPL-2.0","description":"Continuous peer-to-peer file synchronization."}]},
+  {"slug":"1password","name":"1Password","category":"Security","description":"Password manager.","alternatives":[
+    {"name":"Bitwarden","repo":"bitwarden/server","license":"AGPL-3.0 / Bitwarden License","description":"Open source password manager for individuals and teams."},
+    {"name":"Vaultwarden","repo":"dani-garcia/vaultwarden","license":"AGPL-3.0","description":"Lightweight Bitwarden-compatible server."},
+    {"name":"KeePassXC","repo":"keepassxreboot/keepassxc","license":"GPL-2.0 / GPL-3.0","description":"Cross-platform offline password manager."}]},
+  {"slug":"photoshop","name":"Adobe Photoshop","category":"Design","description":"Raster image editing.","alternatives":[
+    {"name":"Krita","repo":"KDE/krita","license":"GPL-3.0","description":"Professional digital painting and illustration."},
+    {"name":"GIMP","repo":null,"url":"https://www.gimp.org","license":"GPL-3.0","description":"Long-standing free image editor."}]},
+  {"slug":"figma","name":"Figma","category":"Design","description":"Collaborative interface design.","alternatives":[
+    {"name":"Penpot","repo":"penpot/penpot","license":"MPL-2.0","description":"Design and prototyping platform for design and code teams."}]},
+  {"slug":"premiere-pro","name":"Adobe Premiere Pro","category":"Video","description":"Professional video editing.","alternatives":[
+    {"name":"Kdenlive","repo":"KDE/kdenlive","license":"GPL-3.0","description":"Multi-track non-linear video editor."},
+    {"name":"OpenShot","repo":"OpenShot/openshot-qt","license":"GPL-3.0","description":"Easy-to-use cross-platform video editor."}]},
+  {"slug":"microsoft-office","name":"Microsoft Office","category":"Productivity","description":"Documents, spreadsheets and presentations.","alternatives":[
+    {"name":"LibreOffice","repo":"LibreOffice/core","license":"MPL-2.0","description":"Full office suite with Writer, Calc and Impress."},
+    {"name":"ONLYOFFICE","repo":"ONLYOFFICE/DocumentServer","license":"AGPL-3.0","description":"Online editors compatible with Office formats."}]},
+  {"slug":"jira","name":"Jira","category":"Project Management","description":"Issue and project tracking.","alternatives":[
+    {"name":"Plane","repo":"makeplane/plane","license":"AGPL-3.0","description":"Issues, cycles and modules for modern teams."}]},
+  {"slug":"trello","name":"Trello","category":"Project Management","description":"Kanban boards.","alternatives":[
+    {"name":"WeKan","repo":"wekan/wekan","license":"MIT","description":"Open source kanban board."}]},
+  {"slug":"salesforce","name":"Salesforce","category":"CRM","description":"Customer relationship management.","alternatives":[
+    {"name":"Twenty","repo":"twentyhq/twenty","license":"AGPL-3.0","description":"Modern open source CRM."}]},
+  {"slug":"intercom","name":"Intercom","category":"Customer Support","description":"Customer messaging and support.","alternatives":[
+    {"name":"Chatwoot","repo":"chatwoot/chatwoot","license":"MIT","description":"Omnichannel customer support platform."}]},
+  {"slug":"zendesk","name":"Zendesk","category":"Customer Support","description":"Helpdesk and ticketing.","alternatives":[
+    {"name":"Zammad","repo":"zammad/zammad","license":"AGPL-3.0","description":"Web-based helpdesk and customer support system."}]},
+  {"slug":"calendly","name":"Calendly","category":"Productivity","description":"Scheduling and booking.","alternatives":[
+    {"name":"Cal.com","repo":"calcom/cal.com","license":"AGPL-3.0","description":"Scheduling infrastructure for everyone."}]},
+  {"slug":"typeform","name":"Typeform","category":"Forms","description":"Forms and surveys.","alternatives":[
+    {"name":"Formbricks","repo":"formbricks/formbricks","license":"AGPL-3.0","description":"Open source survey and experience management."}]},
+  {"slug":"mailchimp","name":"Mailchimp","category":"Marketing","description":"Email marketing.","alternatives":[
+    {"name":"Listmonk","repo":"knadh/listmonk","license":"AGPL-3.0","description":"High-performance self-hosted newsletter manager."}]},
+  {"slug":"shopify","name":"Shopify","category":"E-commerce","description":"Online store platform.","alternatives":[
+    {"name":"Medusa","repo":"medusajs/medusa","license":"MIT","description":"Composable commerce engine."},
+    {"name":"Saleor","repo":"saleor/saleor","license":"BSD-3-Clause","description":"GraphQL-first headless commerce platform."}]},
+  {"slug":"stripe-billing","name":"Stripe Billing","category":"Finance","description":"Subscription billing.","alternatives":[
+    {"name":"Lago","repo":"getlago/lago","license":"AGPL-3.0","description":"Open source metering and usage-based billing."}]},
+  {"slug":"datadog","name":"Datadog","category":"Monitoring","description":"Infrastructure and application monitoring.","alternatives":[
+    {"name":"Grafana","repo":"grafana/grafana","license":"AGPL-3.0","description":"Dashboards and observability."},
+    {"name":"SigNoz","repo":"SigNoz/signoz","license":"MIT (core)","description":"OpenTelemetry-native APM, logs and traces."}]},
+  {"slug":"netflix","name":"Netflix / Plex","category":"Media","description":"Media streaming and libraries.","alternatives":[
+    {"name":"Jellyfin","repo":"jellyfin/jellyfin","license":"GPL-2.0","description":"Free software media system."}]},
+  {"slug":"spotify","name":"Spotify","category":"Media","description":"Music streaming.","alternatives":[
+    {"name":"Navidrome","repo":"navidrome/navidrome","license":"GPL-3.0","description":"Self-hosted music server and streamer."}]},
+  {"slug":"evernote","name":"Evernote","category":"Productivity","description":"Note taking.","alternatives":[
+    {"name":"Joplin","repo":"laurent22/joplin","license":"AGPL-3.0","description":"Note-taking app with end-to-end encrypted sync."}]},
+  {"slug":"chatgpt","name":"ChatGPT","category":"AI","description":"AI chat assistant.","alternatives":[
+    {"name":"Open WebUI","repo":"open-webui/open-webui","license":"Open WebUI License (BSD-3 based)","description":"Self-hosted AI interface for Ollama and OpenAI-compatible APIs."},
+    {"name":"Ollama","repo":"ollama/ollama","license":"MIT","description":"Run large language models locally."},
+    {"name":"LibreChat","repo":"danny-avila/LibreChat","license":"MIT","description":"Multi-provider ChatGPT-style interface."}]},
+  {"slug":"github-copilot","name":"GitHub Copilot","category":"AI","description":"AI coding assistant.","alternatives":[
+    {"name":"Continue","repo":"continuedev/continue","license":"Apache-2.0","description":"Open source AI code assistant for IDEs."},
+    {"name":"Tabby","repo":"TabbyML/tabby","license":"Apache-2.0 (core)","description":"Self-hosted AI coding assistant."}]},
+  {"slug":"midjourney","name":"Midjourney","category":"AI","description":"AI image generation.","alternatives":[
+    {"name":"ComfyUI","repo":"comfyanonymous/ComfyUI","license":"GPL-3.0","description":"Node-based diffusion workflow engine."},
+    {"name":"Stable Diffusion WebUI","repo":"AUTOMATIC1111/stable-diffusion-webui","license":"AGPL-3.0","description":"Browser interface for Stable Diffusion."}]},
+  {"slug":"loom","name":"Loom","category":"Video","description":"Screen recording and sharing.","alternatives":[
+    {"name":"Cap","repo":"CapSoftware/Cap","license":"AGPL-3.0","description":"Open source screen recorder and sharing tool."}]},
+  {"slug":"miro","name":"Miro / Lucidchart","category":"Design","description":"Whiteboards and diagrams.","alternatives":[
+    {"name":"Excalidraw","repo":"excalidraw/excalidraw","license":"MIT","description":"Virtual hand-drawn style whiteboard."},
+    {"name":"draw.io","repo":"jgraph/drawio","license":"Apache-2.0","description":"Diagramming for flowcharts and architecture."}]},
+  {"slug":"postman","name":"Postman","category":"Developer Tools","description":"API testing and development.","alternatives":[
+    {"name":"Bruno","repo":"usebruno/bruno","license":"MIT","description":"Git-friendly offline API client."},
+    {"name":"Hoppscotch","repo":"hoppscotch/hoppscotch","license":"MIT","description":"Lightweight open source API development ecosystem."}]},
+  {"slug":"terraform","name":"Terraform","category":"Developer Tools","description":"Infrastructure as code.","alternatives":[
+    {"name":"OpenTofu","repo":"opentofu/opentofu","license":"MPL-2.0","description":"Community-driven Terraform fork."}]},
+  {"slug":"medium","name":"Medium / Substack","category":"Publishing","description":"Blogging and newsletters.","alternatives":[
+    {"name":"Ghost","repo":"TryGhost/Ghost","license":"MIT","description":"Publishing platform with memberships and newsletters."}]},
+  {"slug":"retool","name":"Retool","category":"Developer Tools","description":"Internal tool builder.","alternatives":[
+    {"name":"Appsmith","repo":"appsmithorg/appsmith","license":"Apache-2.0","description":"Low-code platform for internal apps."},
+    {"name":"ToolJet","repo":"ToolJet/ToolJet","license":"AGPL-3.0","description":"Low-code platform for business apps."}]},
+  {"slug":"tableau","name":"Tableau / Looker","category":"Analytics","description":"Business intelligence.","alternatives":[
+    {"name":"Metabase","repo":"metabase/metabase","license":"AGPL-3.0","description":"Business intelligence for everyone."},
+    {"name":"Apache Superset","repo":"apache/superset","license":"Apache-2.0","description":"Data exploration and visualization platform."}]},
+  {"slug":"algolia","name":"Algolia","category":"Developer Tools","description":"Hosted search.","alternatives":[
+    {"name":"Meilisearch","repo":"meilisearch/meilisearch","license":"MIT","description":"Fast, typo-tolerant search engine."},
+    {"name":"Typesense","repo":"typesense/typesense","license":"GPL-3.0","description":"Open source typo-tolerant search engine."}]},
+  {"slug":"launchdarkly","name":"LaunchDarkly","category":"Developer Tools","description":"Feature flags.","alternatives":[
+    {"name":"Unleash","repo":"Unleash/unleash","license":"Apache-2.0","description":"Open source feature management."}]},
+  {"slug":"docusign","name":"DocuSign","category":"Productivity","description":"E-signatures.","alternatives":[
+    {"name":"Documenso","repo":"documenso/documenso","license":"AGPL-3.0","description":"Open source document signing."}]}
+]
