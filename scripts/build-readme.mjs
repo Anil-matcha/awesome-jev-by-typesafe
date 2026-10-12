@@ -48,6 +48,14 @@ out += `## Notes
 - Licenses and star counts are refreshed from the GitHub API and can change. Check each project before you adopt it.
 - "Open source" here means source is publicly available. Some entries use fair-code or source-available licenses and are marked as such.
 
+## Data sources
+
+- **Curated entries:** the original tool-to-alternative pairs are maintained by hand in [\`data.json\`](data.json).
+- **Discovered entries:** more pairs were found with the [GitHub Search API](https://docs.github.com/en/rest/search/search#search-repositories) by looking for public repositories whose description says "alternative to X". Those entries reuse the repository's own GitHub description, and a human decided which targets are paid SaaS products.
+- **Stars, licenses and last-push dates:** pulled from the [GitHub REST API](https://docs.github.com/en/rest/repos/repos#get-a-repository) and refreshed weekly. Where GitHub can't detect a license, the entry says "See repo".
+- **Community submissions:** added through the [issue form](../../issues/new?template=add-alternative.yml) and pull requests.
+- This list does not copy data from AlternativeTo, OpenAlternative or other directories.
+
 ## Contributing
 
 Add or edit entries in [\`data.json\`](data.json), then run:
