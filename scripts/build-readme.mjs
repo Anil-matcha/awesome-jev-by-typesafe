@@ -26,7 +26,7 @@ const rows = (t) =>
 
 let out = `# Awesome Open Source SaaS Alternatives [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of open source alternatives to popular proprietary software and SaaS, with licenses and GitHub stars.
+> A curated list of open source alternatives to paid SaaS apps, with licenses and GitHub stars.
 
 Looking for a free, self-hostable replacement for a paid tool? Find the tool below and pick an alternative. **Want to add yours? [Submit it here](../../issues/new?template=add-alternative.yml)**, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
