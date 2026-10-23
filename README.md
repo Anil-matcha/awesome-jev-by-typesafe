@@ -602,6 +602,12 @@ These projects add useful integration surfaces that are easy to miss in a use-ca
 | [hunch](https://github.com/steven-shoemaker/hunch) | Python and TypeScript library | Turns Jev `Choice`, `Score`, and `Noul` questions into functions over lists and DataFrames (classify, score, check, where, extract, pick, rank, verify); code owns thresholds, weights, and actions, and unsure rows can be escalated to an LLM that must pick from the same labels. TypeScript port: [hunch-js](https://github.com/steven-shoemaker/hunch-js). |
 | [Refix](https://refix.ai) | Growth | AI that helps your product grow faster on autopilot by running product experiments, SEO, content, and ads. |
 | [Milvus Model](https://github.com/milvus-io/milvus-model) | Reranker adapter | Jev Noul questions score candidate documents in one request; Python sorts scores, keeps original indices, and applies top-k. |
+| [jeff-act](https://github.com/saembit/jeff-act) | Decision runtime | Go library and CLI where Jev picks an action from a YAML allowlist and each argument from code found candidates, a ranked ladder with floors, preconditions and risk gates runs it, and a schema adapter emits parameterized SELECTs. |
+| [jevquery](https://github.com/saembit/jevquery) | Data and SQL | TypeScript planner where Jev picks table, filter, sort and columns from a schema, with Drizzle and Prisma adapters and Standard Schema validation hooks. |
+| [n8n-nodes-jeff](https://github.com/saembit/n8n-nodes-jeff) | Automation | n8n node shipping prebuilt decisions, Rank, Triage, Guard, Match, Verify and Ask, thresholds owned by the node. |
+| [jeff-bot](https://github.com/saembit/jeff-bot) | Community | Discord bot where every feature is a typed Jev decision, settle, rank, forum tagging, FAQ matching and an unanswered question sweep. |
+| [jeff-ink](https://github.com/saembit/jeff-ink) | Games | inkjs wrapper mapping free text to an authored Ink choice or none through one `Choice` plus help and off story `Noul`s. |
+| [jeff-vscode](https://github.com/saembit/jeff-vscode) | Editor tooling | VS Code extension with plain English lint rules, stale comment detection and a paste guard, each a `Noul` through jeff-cli. |
 
 ### Benchmarks, calibration, and open reproductions
 
